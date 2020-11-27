@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="hello" type="LIBRARY" format="ROBOT" scope="GLOBAL" namedargs="true" generated="2020-11-27T04:32:01Z" specversion="2" source="D:\auto\25-11-2020-10-41\outlook1\hello.py" lineno="1">
+<version />
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``hello``.</doc>
+<kw name="Apr" lineno="5">
+<arguments>
+</arguments>
+<doc />
+</kw>
+</keywordspec>
