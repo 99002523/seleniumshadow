@@ -1,6 +1,21 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
+import pyautogui
+
+
+def Avg(a,b):
+    c=0
+    sum=[]
+    print(len(a))
+    for i in range(len(a)):
+        c=a[i]+b[i]
+        c=int(c/2)
+        sum.append(c)
+    #sum[0]=sum[0]+439
+    #sum[1]=sum[1]+285
+    return sum
+
 
 def Apr():
     img = cv2.imread('D:\main\guru.png',0)
@@ -34,7 +49,11 @@ def Apr():
         plt.title('Detected Point'), plt.xticks([]), plt.yticks([])
         plt.suptitle(meth)
 
-        plt.show()
-
+        # plt.show()
+    avg=Avg(top_left,bottom_right)
     return top_left,bottom_right
 
+
+def coordinates_click(locator,a,b):
+    
+    pyautogui.click(a,b) 
