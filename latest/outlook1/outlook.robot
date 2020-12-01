@@ -52,12 +52,14 @@ unsuccessful_login
     
 screenshot
     Append To Environment Variable    Path     ${EXECDIR}${/}driver${/}
-    Open Browser    https://www.guru99.com/    browser=chrome 
+    Open Browser    https://www.python.org/    browser=chrome 
     Set Selenium Implicit Wait    30s
     Maximize Browser Window
     Capture Page Screenshot    D:\\main\\guru.png
-    sleep    5s
-    ${val}    Apr    
+    sleep    5s 
+    ${val}    Apr                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     Log To Console    ${val}
+    #Click Element At Coordinates    //body    ${val}[0]    ${val}[1]
     Sleep    3s    
-    Click Element At Coordinates    //section[@id='g-navigation']    ${val}[0][0]    ${val}[1][0]
+    Coordinates Click    ${val}[0]    ${val}[1]
+    sleep    5s
